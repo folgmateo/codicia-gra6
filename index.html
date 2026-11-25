@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CODICIA: OPERACIÓN GRA (6)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="480" height="264"></canvas>
+  <div id="scan"></div>
+
+  <div id="hud" class="hidden">
+    <div id="hud-chapter"></div>
+    <div id="hud-stats"></div>
+    <div id="hud-task"></div>
+    <div id="hud-clock"></div>
+    <div id="cd-hud" class="cd faint"><span class="cd-l"></span> <span class="cd-t"></span></div>
+    <div id="ticker"></div>
+  </div>
+
+  <div id="dialog" class="hidden">
+    <div id="dbox" class="dbox">
+      <canvas id="portrait" width="24" height="24"></canvas>
+      <div class="dtext">
+        <div id="speaker"></div>
+        <div id="text"></div>
+        <div id="choices"></div>
+        <div id="next" class="blink hidden">▼</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="card" class="hidden"><h1 id="card-title"></h1><p id="card-sub"></p></div>
+
+  <div id="menu" class="hidden">
+    <div class="mtitle"><div class="tag">CODICIA</div><h1>OPERACIÓN GRA (6)</h1></div>
+    <div id="menu-buttons"></div>
+    <div class="cd big"><span class="cd-l"></span> <span class="cd-t"></span></div>
+  </div>
+
+  <div id="panel" class="hidden">
+    <div class="pbox">
+      <div class="ptitle"><span id="panel-title"></span><button id="panel-close" class="x">✕</button></div>
+      <div id="panel-body"></div>
+    </div>
+  </div>
+
+  <div id="toasts"></div>
+  <div id="fade"></div>
+
+  <div id="touch" class="hidden">
+    <div class="dpad">
+      <button data-k="arrowup">▲</button>
+      <div><button data-k="arrowleft">◀</button><button data-k="arrowdown">▼</button><button data-k="arrowright">▶</button></div>
+    </div>
+    <div class="acts">
+      <button data-k="e">E</button>
+      <button data-k="i">INV</button>
+      <button data-k="j">MIS</button>
+      <button data-k="escape">ESC</button>
+    </div>
+  </div>
+</div>
+
+<script src="config.js?v=8"></script>
+<script src="story.js?v=8"></script>
+<script src="minigames.js?v=8"></script>
+<script src="ui.js?v=8"></script>
+<script src="game.js?v=8"></script>
+</body>
+</html>
